@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Dao {
-	public static void getConnection(String url,String user,String password)throws SQLException {
+	public static void getConnectio(String url,String user,String password)throws SQLException {
 		Connection con=null;
 		PreparedStatement ps=null;
 		ResultSet rs=null;
