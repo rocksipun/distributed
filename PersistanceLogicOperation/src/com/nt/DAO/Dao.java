@@ -11,7 +11,7 @@ public class Dao {
 		Connection con=null;
 		PreparedStatement ps=null;
 		ResultSet rs=null;
-		con=DriverManager.getConnection(jdbc:oracle:thin:@localhost, scott, tiger);
+		con=DriverManager.getConnection(jdbc:oracle:thin:@localhost:orcl, scott, tiger);
 		ps=con.prepareStatement("select count(*) from emp");
 		rs=ps.executeQuery();
 		rs.next();
